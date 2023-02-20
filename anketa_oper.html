@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS</title>
+</head>
+<body>
+    <script>
+        let sName = prompt('Введите вашу фамилию');   //string
+        let fName = prompt('Введите ваше имя');     //string
+        let pName = prompt('Введите ваше отчество');    //string
+        let userAge = parseInt(prompt('Введите ваш возраст')); //number
+        let isMale = confirm('Ваш пол - мужской?');    //bool
+
+        let gender = isMale ? 'мужской' : 'женский';
+        let pension = (userAge > 60) ? 'Да' : 'Нет';
+
+        alert(
+            `ваше ФИО: ${sName} ${fName} ${pName} \nваш возраст в годах: ${userAge} \nваш возраст в годах: ${userAge * 365} \nчерез пять лет вам будет: ${userAge + 5} \nваш пол: ${gender} \nвы на пенсии: ${pension}`
+            );
+    </script>
+</body>
+</html>
+
